@@ -1,9 +1,8 @@
 /*
-cron "0 9 * * *" Aliyun_Cloud.js, tag=阿里云盘签到
+cron "0 9 * * *" Aliyun_Cloud.js
 */
 
-
-const $ = new Env('阿里云盘签到');
+const $ = new Env('阿里云盘签到')
 const axios = require('axios')
 const { initInstance, getEnv, updateCkEnv } = require('./function/qlApi.js')
 const notify = require('./function/sendNotify')
