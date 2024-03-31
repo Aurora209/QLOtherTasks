@@ -1,10 +1,10 @@
 /*
-cron "0 9 * * *" Aliyun_Cloud.js
+cron "0 9 * * *" jd_aliyunautoSignin.js, tag=阿里云盘签到
 */
 
 const axios = require('axios')
 const { initInstance, getEnv, updateCkEnv } = require('./function/qlApi.js')
-const notify = require('./function/sendNotify')
+const notify = require('./sendNotify')
 
 const updateAccesssTokenURL = 'https://auth.aliyundrive.com/v2/account/token'
 const signinURL =
